@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 12 Lab</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px;  
+        color: #e2e8f0;
+        background: linear-gradient(
+        135deg,
+        #3b809d,
+        #2b446d,
+        #317e9f,
+        #223d67
+    ); 
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite; }
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    h1   { color: #0A0E2A; }
+    button { background: #0A0E2A; color: white; border: none; padding: 10px 20px;
+             font-size: 16px; cursor: pointer; margin-top: 10px; }
+    input, textarea { width: 100%; padding: 8px; font-size: 16px;
+                      box-sizing: border-box; margin-top: 6px; }
+    #message { margin-top: 12px; font-size: 18px; font-weight: bold; }
+    #greeting { margin-top: 10px; font-size: 18px; }
+    .success { color: rgb(0, 255, 0); }
+    .error   { color: red; }
+  </style>
+</head>
+<body>
+  <section>
+    <h2>Send a Message</h2>
+    <label>Your name:</label>
+    <input type="text" id="nameInput" placeholder="Type your name here">
+    <label>Your message:</label>
+    <textarea id="msgInput" rows="3" placeholder="Type your message here"></textarea>
+    <button id="sendBtn">Send</button>
+    <p id="greeting"></p>
+  </section>
+  <script src="jav.js">
+</script>
+</body>
+</html>
